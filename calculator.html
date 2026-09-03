@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Math Magician | Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <h1>Math Magician</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="quote.html">Quote</a>
+        </nav>
+
+    </header>
+
+
+    <main class="calculator-page">
+
+        <h2>Let's Do Some Math...</h2>
+
+
+        <div class="calculator">
+
+            <!-- Display -->
+            <div id="display">0</div>
+
+
+            <!-- Calculator Buttons -->
+            <div class="buttons">
+
+                <button onclick="clearDisplay()">AC</button>
+
+                <button onclick="toggleSign()">+/-</button>
+
+                <button onclick="percentage()">%</button>
+
+                <button class="operator"
+                    onclick="chooseOperator('/')">
+                    ÷
+                </button>
+
+
+                <button onclick="appendNumber('7')">
+                    7
+                </button>
+
+                <button onclick="appendNumber('8')">
+                    8
+                </button>
+
+                <button onclick="appendNumber('9')">
+                    9
+                </button>
+
+                <button class="operator"
+                    onclick="chooseOperator('*')">
+                    ×
+                </button>
+
+
+                <button onclick="appendNumber('4')">
+                    4
+                </button>
+
+                <button onclick="appendNumber('5')">
+                    5
+                </button>
+
+                <button onclick="appendNumber('6')">
+                    6
+                </button>
+
+                <button class="operator"
+                    onclick="chooseOperator('-')">
+                    -
+                </button>
+
+
+                <button onclick="appendNumber('1')">
+                    1
+                </button>
+
+                <button onclick="appendNumber('2')">
+                    2
+                </button>
+
+                <button onclick="appendNumber('3')">
+                    3
+                </button>
+
+                <button class="operator"
+                    onclick="chooseOperator('+')">
+                    +
+                </button>
+
+
+                <button class="zero"
+                    onclick="appendNumber('0')">
+                    0
+                </button>
+
+                <button onclick="appendNumber('.')">
+                    .
+                </button>
+
+                <button class="operator"
+                    onclick="calculate()">
+                    =
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="css/js/script.js"></script>
+
+</body>
+
+</html>
